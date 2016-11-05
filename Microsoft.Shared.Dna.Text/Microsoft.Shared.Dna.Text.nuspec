@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <metadata>
+    <id>Microsoft.Shared.Dna.Text</id>
+    <version>1.0.3</version>
+    <title>Windows Data and Analytics Shared Code - Text Processing</title>
+    <authors>rich-b-daniel</authors>
+    <owners>Microsoft,rich-b-daniel</owners>
+    <description>Do you deal with lots of text in managed code? Are you running up against cases where StringBuilder doesn't have the right performance? Did you ever wonder why there's no .NET string equivalent to ArraySegment? If so, then this package might be right for you.</description>
+    <summary>Windows Data and Analytics shared code for manipulating text in big data applications.</summary>
+    <projectUrl>https://github.com/Microsoft/Microsoft.Shared.Dna.Text</projectUrl>
+    <licenseUrl>https://github.com/Microsoft/Microsoft.Shared.Dna.Text/blob/master/LICENSE.txt</licenseUrl>
+    <copyright>Microsoft Corporation</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>dna telemetry map-reduce big data json</tags>
+    <developmentDependency>true</developmentDependency>
+  </metadata>
+  <files>
+    <file src="FixedStringBuilder.cs" target="content\net40\Microsoft.Shared.Dna" />
+    <file src="StringSegment.cs" target="content\net40\Microsoft.Shared.Dna" />
+  </files>
+</package>
