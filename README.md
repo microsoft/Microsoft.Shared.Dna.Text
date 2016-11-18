@@ -8,7 +8,8 @@ If so, then this package might be right for you.
 
 The Windows team is building it's own high-performance, low-allocation text API for processing data in various "big data" systems. We've managed to squeeze some pretty astonishing performance out of our implementation. Since it wasn't tightly coupled to anything either, we thought we'd share the goodness with everyone.
 
-We're sharing our code as NuGet "recipe" packages. That means that instead of adding a DLL reference to your code, we're adding the source files themselves. Everything we add is internal and therefore scoped only to that assembly. So, you can freely add this to as many projects as you like without fear of conflicts. We do this for a few reasons
+We're sharing our code as NuGet "recipe" packages. That means that instead of adding a DLL reference to your code, we're adding the source files themselves. Everything we add is internal and therefore scoped only to that assembly. So, you can freely add this to as many projects as you like without fear of conflicts. We do this for a few reasons:
+
 1. In this day and age, the JIT compiler is usually smart enough to optimize away annything you don't use and codegen overhead isn't typically concerning on beefy server machines.
 2. It helps avoid assembly versioning issues when several projects have a dependency on this and each other.
 3. It also -- to a lesser degree -- insulates us from framework versioning issues. We try to keep the syntax simple and therefore, in many cases, we're natually compatible all the way back to .NET 3.5.
